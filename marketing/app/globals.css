@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+
+@theme inline {
+  --color-background: #091413;
+  --color-foreground: #ffffff;
+  --font-sans: var(--font-noto-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-noto-serif);
+
+  /* Canyon Green Palette */
+  --color-canyon-deep: #091413;
+  --color-canyon-dark: #0f2420;
+  --color-canyon-mid: #1a3d35;
+  --color-canyon-green: #285A48;
+  --color-canyon-bright: #408A71;
+  --color-canyon-light: #6AB89A;
+  --color-canyon-sage: #B0E4CC;
+  --color-canyon-mist: #D8F2E8;
+
+  /* Accent Colors */
+  --color-lime: #bcfd49;
+  --color-lime-hover: #d4fe7f;
+  --color-sand: #D4A843;
+  --color-sand-light: #E0BF6A;
+  --color-slate-blue: #5B8FA8;
+  --color-slate-blue-light: #7AAFC4;
+
+  /* Agent Colors */
+  --color-agent-warren: #D4A843;
+  --color-agent-fin: #408A71;
+  --color-agent-liza: #5B8FA8;
+  --color-agent-ferd: #8B7EAF;
+  --color-agent-tara: #C47A6E;
+}
+
+body {
+  background: var(--color-canyon-deep);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Override Tailwind base reset border style */
+*, *::before, *::after, ::backdrop {
+  border: 0 none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
