@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
   return (
     <>
@@ -31,9 +33,25 @@ export default function ContactPage() {
             </div>
           ) : (
             <form
-              onSubmit={(e) => {
+              onSubmit={async (e) => {
                 e.preventDefault();
-                setSubmitted(true);
+                setSubmitting(true);
+                setError("");
+                const form = e.currentTarget;
+                const data = Object.fromEntries(new FormData(form));
+                try {
+                  const res = await fetch("/api/contact", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(data),
+                  });
+                  if (!res.ok) throw new Error("Failed to submit");
+                  setSubmitted(true);
+                } catch {
+                  setError("Something went wrong. Please try again or email hello@deepcanyon.ai.");
+                } finally {
+                  setSubmitting(false);
+                }
               }}
               className="mt-12 space-y-5"
             >
@@ -88,11 +106,15 @@ export default function ContactPage() {
                   placeholder="Tell us about your goals..."
                 />
               </div>
+              {error && (
+                <p className="text-sm text-red-400 text-center">{error}</p>
+              )}
               <button
                 type="submit"
-                className="w-full h-12 bg-lime text-canyon-deep font-semibold rounded-full hover:bg-lime-hover transition-colors duration-150 text-sm"
+                disabled={submitting}
+                className="w-full h-12 bg-lime text-canyon-deep font-semibold rounded-full hover:bg-lime-hover transition-colors duration-150 text-sm disabled:opacity-50"
               >
-                Submit
+                {submitting ? "Submitting..." : "Submit"}
               </button>
               <p className="text-xs text-white/25 text-center">
                 We'll respond within one business day. Your information is kept confidential.
