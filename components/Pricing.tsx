@@ -156,7 +156,11 @@ export default function Pricing() {
               <h3 className={`text-xl font-semibold ${t.slug === 'business' ? 'text-[#091413]' : 'text-white'}`}>{t.name}</h3>
 
               {"agentHighlight" in t && t.agentHighlight && (
-                <p className="mt-2 text-xs font-medium text-canyon-sage bg-canyon-bright/10 border border-canyon-bright/20 rounded-full px-3 py-1 inline-block">
+                <p className={`mt-2 text-xs font-medium rounded-full px-3 py-1 inline-block ${
+                  t.slug === 'business'
+                    ? 'text-[#091413] bg-[#091413]/10 border border-[#091413]/20'
+                    : 'text-canyon-sage bg-canyon-bright/10 border border-canyon-bright/20'
+                }`}>
                   {t.agentHighlight}
                 </p>
               )}
@@ -176,12 +180,12 @@ export default function Pricing() {
 
               <div className="mt-1 space-y-0.5">
                 {t.aum && (
-                  <p className="text-sm text-canyon-sage/50">
+                  <p className={`text-sm ${t.slug === 'business' ? 'text-[#091413]/60' : 'text-canyon-sage/50'}`}>
                     + {t.aum}/yr AUM fee
                   </p>
                 )}
                 {t.tradeFee && (
-                  <p className="text-sm text-canyon-sage/50">
+                  <p className={`text-sm ${t.slug === 'business' ? 'text-[#091413]/60' : 'text-canyon-sage/50'}`}>
                     {t.tradeFee}/crypto trade
                   </p>
                 )}
@@ -192,7 +196,9 @@ export default function Pricing() {
                 className={`mt-6 w-full inline-flex items-center justify-center h-10 rounded-full font-semibold text-sm transition-colors duration-150 ${
                   t.featured
                     ? "bg-lime text-canyon-deep hover:bg-lime-hover"
-                    : "bg-canyon-green/20 border border-canyon-green/40 text-white hover:bg-canyon-green/30"
+                    : t.slug === 'business'
+                      ? "bg-[#091413] text-white hover:bg-[#091413]/80"
+                      : "bg-canyon-green/20 border border-canyon-green/40 text-white hover:bg-canyon-green/30"
                 }`}
               >
                 {t.cta}
@@ -204,7 +210,7 @@ export default function Pricing() {
                     {f.included ? (
                       <Check
                         size={16}
-                        className="text-canyon-bright mt-0.5 shrink-0"
+                        className={`mt-0.5 shrink-0 ${t.slug === 'business' ? 'text-[#091413]/70' : 'text-canyon-bright'}`}
                       />
                     ) : (
                       <X
