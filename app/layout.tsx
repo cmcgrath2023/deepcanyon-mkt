@@ -40,6 +40,10 @@ export const metadata: Metadata = {
       "Multi-layered AI trading across equities, crypto, forex, and commodities. Start your free trial today.",
   },
   metadataBase: new URL("https://deepcanyon.ai"),
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

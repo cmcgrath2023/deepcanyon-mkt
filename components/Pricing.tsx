@@ -192,7 +192,7 @@ export default function Pricing() {
               </div>
 
               <a
-                href={t.slug === 'business' ? 'mailto:hello@deepcanyon.ai?subject=Business%20Tier%20Inquiry' : `https://app.deepcanyon.ai/signup?tier=${t.slug}`}
+                href={t.slug === 'business' ? '/contact' : `https://app.deepcanyon.ai/signup?tier=${t.slug}`}
                 className={`mt-6 w-full inline-flex items-center justify-center h-10 rounded-full font-semibold text-sm transition-colors duration-150 ${
                   t.featured
                     ? "bg-lime text-canyon-deep hover:bg-lime-hover"
