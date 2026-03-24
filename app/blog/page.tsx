@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Blog — Deep Canyon",
+  description: "Insights on AI trading, market analysis, and platform updates from Deep Canyon.",
+  openGraph: { title: "Blog — Deep Canyon", description: "Insights on AI trading and market analysis.", images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }] },
+};
 
 export default function BlogPage() {
   return (

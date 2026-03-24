@@ -1,4 +1,15 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
+
+export const metadata: Metadata = {
+  title: "Bayesian Intelligence — Deep Canyon",
+  description: "Self-improving AI that learns from every trade. Per-ticker win rates, indicator reliability, and market regime beliefs update continuously.",
+  openGraph: {
+    title: "Bayesian Intelligence — Deep Canyon",
+    description: "Self-improving AI that learns from every trade. The system gets smarter with every outcome.",
+    images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }],
+  },
+};
 import Footer from "@/components/Footer";
 import FinalCTA from "@/components/FinalCTA";
 

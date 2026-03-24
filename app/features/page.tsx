@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FinalCTA from "@/components/FinalCTA";
+
+export const metadata: Metadata = {
+  title: "Platform Features — Deep Canyon",
+  description: "Multi-layered trading intelligence: 7-vote signal engine, Bayesian learning, Playbooks, 24/7 global coverage, and autonomous risk management.",
+  openGraph: { title: "Platform Features — Deep Canyon", description: "Multi-layered trading intelligence across every asset class.", images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }] },
+};
 import {
   Layers,
   Brain,

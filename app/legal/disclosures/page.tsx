@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Disclosures — Deep Canyon",
+  description: "Regulatory disclosures, risk warnings, and brokerage partner information for Deep Canyon.",
+};
 
 export default function DisclosuresPage() {
   return (

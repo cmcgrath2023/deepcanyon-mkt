@@ -1,4 +1,15 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
+
+export const metadata: Metadata = {
+  title: "Playbooks — Deep Canyon",
+  description: "Choose from proven strategy playbooks or build your own. Define asset allocation, risk parameters, and trading style.",
+  openGraph: {
+    title: "Playbooks — Deep Canyon",
+    description: "Choose from proven strategy playbooks or build your own.",
+    images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }],
+  },
+};
 import Footer from "@/components/Footer";
 import FinalCTA from "@/components/FinalCTA";
 

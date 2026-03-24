@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy — Deep Canyon",
+  description: "How Deep Canyon collects, uses, and protects your personal information.",
+};
 
 export default function PrivacyPage() {
   return (

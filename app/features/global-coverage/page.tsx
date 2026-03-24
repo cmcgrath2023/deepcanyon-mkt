@@ -1,4 +1,15 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
+
+export const metadata: Metadata = {
+  title: "24/7 Global Coverage — Deep Canyon",
+  description: "Seven trading sessions across Sydney, Tokyo, Hong Kong, London, Frankfurt, and New York. Crypto runs around the clock.",
+  openGraph: {
+    title: "24/7 Global Coverage — Deep Canyon",
+    description: "Seven trading sessions across the world's major financial centers. Your portfolio never sleeps.",
+    images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }],
+  },
+};
 import Footer from "@/components/Footer";
 import FinalCTA from "@/components/FinalCTA";
 

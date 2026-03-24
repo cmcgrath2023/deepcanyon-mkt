@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions — Deep Canyon",
+  description: "Terms of service for the Deep Canyon autonomous trading platform.",
+};
 
 export default function TermsPage() {
   return (

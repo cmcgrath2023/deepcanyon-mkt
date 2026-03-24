@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FinalCTA from "@/components/FinalCTA";
+
+export const metadata: Metadata = {
+  title: "Equities & Options — Deep Canyon",
+  description: "260+ tickers scanned continuously with 7-vote consensus. Sector rotation, options strategies, and earnings analysis.",
+  openGraph: { title: "Equities & Options — Deep Canyon", description: "260+ tickers with 7-vote consensus trading.", images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }] },
+};
 
 const bullets = [
   "260+ tickers scanned continuously — most-actives, top movers, sector ETFs",

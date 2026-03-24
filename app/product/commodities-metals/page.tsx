@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FinalCTA from "@/components/FinalCTA";
+
+export const metadata: Metadata = {
+  title: "Commodities & Metals — Deep Canyon",
+  description: "Gold, silver, crude oil, and agriculture with auto-hedging. Precious metals activate when volatility spikes.",
+  openGraph: { title: "Commodities & Metals — Deep Canyon", description: "Hard assets with intelligent allocation and auto-hedging.", images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }] },
+};
 
 const bullets = [
   "Gold momentum: EMA 20/50 crossover trend-following system",

@@ -1,4 +1,15 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
+
+export const metadata: Metadata = {
+  title: "7-Vote Signal Engine — Deep Canyon",
+  description: "Every trade requires consensus from 7 independent indicators: RSI, MACD, Bollinger Bands, EMA stack, momentum, mean reversion, and a neural ensemble.",
+  openGraph: {
+    title: "7-Vote Signal Engine — Deep Canyon",
+    description: "Every trade requires consensus from 7 independent indicators. No single signal trades alone.",
+    images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }],
+  },
+};
 import Footer from "@/components/Footer";
 import FinalCTA from "@/components/FinalCTA";
 

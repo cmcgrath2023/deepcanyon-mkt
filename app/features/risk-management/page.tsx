@@ -1,4 +1,15 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
+
+export const metadata: Metadata = {
+  title: "Risk Management — Deep Canyon",
+  description: "Circuit breakers, trailing stops, position concentration limits, and strategy drift detection — all autonomous.",
+  openGraph: {
+    title: "Risk Management — Deep Canyon",
+    description: "Autonomous risk management: circuit breakers, trailing stops, concentration limits, and drift detection.",
+    images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }],
+  },
+};
 import Footer from "@/components/Footer";
 import FinalCTA from "@/components/FinalCTA";
 

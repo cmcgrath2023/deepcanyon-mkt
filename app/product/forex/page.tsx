@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FinalCTA from "@/components/FinalCTA";
+
+export const metadata: Metadata = {
+  title: "Forex Trading — Deep Canyon",
+  description: "7 currency pairs across London, New York, and Tokyo sessions. Session momentum, carry trades, and central bank tracking.",
+  openGraph: { title: "Forex Trading — Deep Canyon", description: "7 currency pairs across global sessions with AI-powered execution.", images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }] },
+};
 
 const bullets = [
   "Session momentum strategies that capture London and NY open moves",
