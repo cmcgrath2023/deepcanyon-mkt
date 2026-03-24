@@ -6,10 +6,10 @@ import { Squash as Hamburger } from "hamburger-react";
 import Image from "next/image";
 
 const offerItems = [
-  { label: "Crypto", href: "/markets/crypto" },
-  { label: "Forex", href: "/markets/forex" },
-  { label: "Equities & Options", href: "/markets/equities-options" },
-  { label: "Commodities & Metals", href: "/markets/commodities-metals" },
+  { label: "Crypto", href: "/product/crypto" },
+  { label: "Forex", href: "/product/forex" },
+  { label: "Equities & Options", href: "/product/equities-options" },
+  { label: "Commodities & Metals", href: "/product/commodities-metals" },
 ];
 
 const featureItems = [
