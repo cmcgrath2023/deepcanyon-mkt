@@ -6,7 +6,7 @@ import FinalCTA from "@/components/FinalCTA";
 export const metadata: Metadata = {
   title: "What We Offer — Deep Canyon",
   description: "AI-powered trading across crypto, forex, equities & options, and commodities & metals.",
-  openGraph: { title: "What We Offer — Deep Canyon", description: "AI-powered trading across every major asset class.", images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }] },
+  openGraph: { title: "What We Offer — Deep Canyon", description: "AI-powered trading across every major asset class.", images: [{ url: "https://deepcanyon.ai/Meta-OG.png", width: 1200, height: 630 }] },
 };
 import {
   Bitcoin,

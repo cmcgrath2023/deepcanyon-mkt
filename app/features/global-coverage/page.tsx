@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "24/7 Global Coverage — Deep Canyon",
     description: "Seven trading sessions across the world's major financial centers. Your portfolio never sleeps.",
-    images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }],
+    images: [{ url: "https://deepcanyon.ai/Meta-OG.png", width: 1200, height: 630 }],
   },
 };
 import Footer from "@/components/Footer";

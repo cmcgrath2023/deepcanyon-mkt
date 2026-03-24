@@ -6,7 +6,7 @@ import FinalCTA from "@/components/FinalCTA";
 export const metadata: Metadata = {
   title: "Equities & Options — Deep Canyon",
   description: "260+ tickers scanned continuously with 7-vote consensus. Sector rotation, options strategies, and earnings analysis.",
-  openGraph: { title: "Equities & Options — Deep Canyon", description: "260+ tickers with 7-vote consensus trading.", images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Equities & Options — Deep Canyon", description: "260+ tickers with 7-vote consensus trading.", images: [{ url: "https://deepcanyon.ai/Meta-OG.png", width: 1200, height: 630 }] },
 };
 
 const bullets = [

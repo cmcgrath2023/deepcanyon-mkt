@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "About — Deep Canyon",
   description: "We're building autonomous trading intelligence — a platform that researches, validates, executes, and learns from every trade.",
-  openGraph: { title: "About — Deep Canyon", description: "Building the next generation of autonomous trading intelligence.", images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }] },
+  openGraph: { title: "About — Deep Canyon", description: "Building the next generation of autonomous trading intelligence.", images: [{ url: "https://deepcanyon.ai/Meta-OG.png", width: 1200, height: 630 }] },
 };
 
 export default function AboutPage() {

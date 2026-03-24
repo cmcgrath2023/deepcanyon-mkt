@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Playbooks — Deep Canyon",
     description: "Choose from proven strategy playbooks or build your own.",
-    images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }],
+    images: [{ url: "https://deepcanyon.ai/Meta-OG.png", width: 1200, height: 630 }],
   },
 };
 import Footer from "@/components/Footer";

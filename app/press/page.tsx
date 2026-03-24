@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Press — Deep Canyon",
   description: "Media inquiries and press resources for Deep Canyon.",
-  openGraph: { title: "Press — Deep Canyon", description: "Media inquiries and press resources.", images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Press — Deep Canyon", description: "Media inquiries and press resources.", images: [{ url: "https://deepcanyon.ai/Meta-OG.png", width: 1200, height: 630 }] },
 };
 
 export default function PressPage() {

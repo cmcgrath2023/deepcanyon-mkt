@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       "Multi-layered AI trading across equities, crypto, forex, and commodities. Start your free trial today.",
     url: "https://deepcanyon.ai",
     siteName: "Deep Canyon",
-    images: [{ url: "https://deepcanyon.ai/dcan-meta.png", width: 1200, height: 630 }],
+    images: [{ url: "https://deepcanyon.ai/Meta-OG.png", width: 1200, height: 630 }],
     type: "website",
   },
   twitter: {
