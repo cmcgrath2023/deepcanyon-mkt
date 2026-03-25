@@ -1,0 +1,33 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer circle: 7-Vote Signal Engine -->
+  <circle cx="300" cy="280" r="260" fill="#0f2420" stroke="#408A71" stroke-width="1.5" opacity="0.9"/>
+  <text x="300" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#6AB89A">7-Vote</text>
+  <text x="300" y="128" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#6AB89A">Signal Engine</text>
+
+  <!-- Middle circle: Bayesian Intelligence -->
+  <circle cx="300" cy="330" r="185" fill="#1a3d35" stroke="#5B8FA8" stroke-width="1.5" opacity="0.9"/>
+  <text x="300" y="230" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="#7AAFC4">Bayesian</text>
+  <text x="300" y="256" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="#7AAFC4">Intelligence</text>
+
+  <!-- Inner circle: Neural Ensemble -->
+  <circle cx="300" cy="390" r="120" fill="#285A48" stroke="#BCFD49" stroke-width="1.5" opacity="0.9"/>
+  <text x="300" y="380" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#BCFD49">Neural</text>
+  <text x="300" y="406" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#BCFD49">Ensemble</text>
+  <text x="300" y="432" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#BCFD49" opacity="0.6">LSTM + GRU</text>
+
+  <!-- Indicator labels around outer ring -->
+  <text x="90" y="200" text-anchor="middle" font-family="monospace" font-size="10" fill="#408A71" opacity="0.7">RSI</text>
+  <text x="510" y="200" text-anchor="middle" font-family="monospace" font-size="10" fill="#408A71" opacity="0.7">MACD</text>
+  <text x="60" y="340" text-anchor="middle" font-family="monospace" font-size="10" fill="#408A71" opacity="0.7">EMA Stack</text>
+  <text x="540" y="340" text-anchor="middle" font-family="monospace" font-size="10" fill="#408A71" opacity="0.7">Bollinger</text>
+  <text x="100" y="460" text-anchor="middle" font-family="monospace" font-size="10" fill="#408A71" opacity="0.7">Momentum</text>
+  <text x="500" y="460" text-anchor="middle" font-family="monospace" font-size="10" fill="#408A71" opacity="0.7">Mean Rev</text>
+
+  <!-- Connecting dots -->
+  <circle cx="90" cy="210" r="3" fill="#408A71" opacity="0.5"/>
+  <circle cx="510" cy="210" r="3" fill="#408A71" opacity="0.5"/>
+  <circle cx="60" cy="350" r="3" fill="#408A71" opacity="0.5"/>
+  <circle cx="540" cy="350" r="3" fill="#408A71" opacity="0.5"/>
+  <circle cx="100" cy="470" r="3" fill="#408A71" opacity="0.5"/>
+  <circle cx="500" cy="470" r="3" fill="#408A71" opacity="0.5"/>
+</svg>
