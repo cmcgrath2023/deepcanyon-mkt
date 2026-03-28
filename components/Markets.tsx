@@ -1,4 +1,4 @@
-import { ArrowRight, LayoutGrid, Grid2x2Check, TrendingUp, Globe } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const cards = [
   {
@@ -8,9 +8,7 @@ const cards = [
     href: "/features/signal-engine",
     accent: "#BCFD49",
     solidColor: "#1a3d35",
-    bgImage: "/images/candidates/08-rock-formations.jpg",
-    icon1: LayoutGrid,
-    icon2: Grid2x2Check,
+    image: "/images/card-signal.jpg",
   },
   {
     label: "Bayesian Intelligence",
@@ -19,8 +17,7 @@ const cards = [
     href: "/features/bayesian-intelligence",
     accent: "#5B8FA8",
     solidColor: "#0f2420",
-    bgImage: "/images/candidates/04-sandstone-waves.jpg",
-    svgImage: "/images/bayesian-brain.svg",
+    image: "/images/card-bayesian.jpg",
   },
   {
     label: "Crypto",
@@ -29,8 +26,7 @@ const cards = [
     href: "/product/crypto",
     accent: "#D4A843",
     solidColor: "#285A48",
-    bgImage: "/images/candidates/03-red-rock-sunlight.jpg",
-    productImage: "/images/crypto-on-mobi-larger.avif",
+    image: "/images/crypto-on-mobi-larger.avif",
   },
   {
     label: "Equities & Options",
@@ -39,8 +35,7 @@ const cards = [
     href: "/product/equities-options",
     accent: "#408A71",
     solidColor: "#091413",
-    bgImage: "/images/candidates/05-lower-antelope.jpg",
-    icon1: TrendingUp,
+    image: "/images/card-equities.jpg",
   },
   {
     label: "24/7 Global Coverage",
@@ -49,8 +44,7 @@ const cards = [
     href: "/features/global-coverage",
     accent: "#C47A6E",
     solidColor: "#0f2420",
-    bgImage: "/images/candidates/07-antelope-arizona.jpg",
-    icon1: Globe,
+    image: "/images/card-global.jpg",
   },
 ];
 
@@ -76,25 +70,25 @@ export default function Markets() {
           <div className="h-[600px]" />
 
           {/* Card 2 */}
-          <div className="sticky top-[80px] w-full -mt-[600px] mb-8 overflow-hidden" style={{ zIndex: 2 }}>
+          <div className="sticky top-[110px] w-full -mt-[600px] mb-8 overflow-hidden" style={{ zIndex: 2 }}>
             <CardInner card={cards[1]} />
           </div>
           <div className="h-[600px]" />
 
           {/* Card 3 */}
-          <div className="sticky top-[80px] w-full -mt-[600px] mb-8 overflow-hidden" style={{ zIndex: 3 }}>
+          <div className="sticky top-[140px] w-full -mt-[600px] mb-8 overflow-hidden" style={{ zIndex: 3 }}>
             <CardInner card={cards[2]} />
           </div>
           <div className="h-[600px]" />
 
           {/* Card 4 */}
-          <div className="sticky top-[80px] w-full -mt-[600px] mb-8 overflow-hidden" style={{ zIndex: 4 }}>
+          <div className="sticky top-[170px] w-full -mt-[600px] mb-8 overflow-hidden" style={{ zIndex: 4 }}>
             <CardInner card={cards[3]} />
           </div>
           <div className="h-[600px]" />
 
           {/* Card 5 */}
-          <div className="sticky top-[80px] w-full -mt-[600px] mb-8 overflow-hidden" style={{ zIndex: 5 }}>
+          <div className="sticky top-[200px] w-full -mt-[600px] mb-8 overflow-hidden" style={{ zIndex: 5 }}>
             <CardInner card={cards[4]} />
           </div>
 
@@ -106,9 +100,6 @@ export default function Markets() {
 }
 
 function CardInner({ card: c }: { card: (typeof cards)[0] }) {
-  const Icon1 = "icon1" in c ? c.icon1 : null;
-  const Icon2 = "icon2" in c ? c.icon2 : null;
-
   return (
     <div className="flex flex-col md:flex-row min-h-[600px]">
       {/* Left half — solid color with text */}
@@ -137,28 +128,9 @@ function CardInner({ card: c }: { card: (typeof cards)[0] }) {
         </a>
       </div>
 
-      {/* Right half — canyon bg with visual */}
-      <div className="md:w-1/2 relative min-h-[300px] md:min-h-0 flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${c.bgImage})` }}
-        />
-        <div className="absolute inset-0 bg-black/40" />
-
-        <div className="relative z-10 p-8">
-          {"productImage" in c && c.productImage ? (
-            <img src={c.productImage} alt={c.label} className="absolute inset-0 w-full h-full object-cover" />
-          ) : "svgImage" in c && c.svgImage ? (
-            <img src={c.svgImage} alt={c.label} className="w-full max-w-[380px] h-auto" />
-          ) : Icon1 && Icon2 ? (
-            <div className="flex items-center gap-6">
-              <Icon1 size={120} strokeWidth={0.6} style={{ color: c.accent }} className="opacity-70" />
-              <Icon2 size={120} strokeWidth={0.6} style={{ color: c.accent }} className="opacity-90" />
-            </div>
-          ) : Icon1 ? (
-            <Icon1 size={160} strokeWidth={0.5} style={{ color: c.accent }} className="opacity-60" />
-          ) : null}
-        </div>
+      {/* Right half — full bleed image */}
+      <div className="md:w-1/2 relative min-h-[300px] md:min-h-0 overflow-hidden">
+        <img src={c.image} alt={c.label} className="absolute inset-0 w-full h-full object-cover" />
       </div>
     </div>
   );
